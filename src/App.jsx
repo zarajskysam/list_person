@@ -3,7 +3,11 @@ import List from './components/List';
 
 function App() {
   return (
-    <List />
+    <div className="container">
+      <section className="listperson">
+        <List />
+      </section>
+    </div>
   );
 }
 
