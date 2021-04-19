@@ -10,7 +10,7 @@ export default function Lsit() {
 
     useEffect(() => {
         async function getData () {
-            const response = await fetch('https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/hooks-context/use-effect/data/users.json');
+            const response = await fetch(process.env.REACT_APP_USER_LIST);
             const users = await response.json();
             setPersons(users);
         }
